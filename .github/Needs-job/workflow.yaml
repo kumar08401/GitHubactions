@@ -6,18 +6,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: apt update -y"
+        run: echo "Hello World"
       - name: Multiline Command
         run: |
           node -v
           npm -v
-  run-shell2-commands:
+  parallel-job-macos:
+    runs-on: macos-latest
+    steps:
+      - name: View SW Version
+        run: sw_vers
+  dependant-job:
+    runs-on: windows-latest
     needs: run-shell-commands
-    runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: apt update -y"
-      - name: Multiline Command
-        run: |
-          node -v
-          npm -v
+        run: Write-Output "Windows String"
+      - name: Error Step
+        run: doesnotexits
