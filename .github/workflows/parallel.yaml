@@ -13,6 +13,7 @@ jobs:
           npm -v
   parallel-job-macos:
     runs-on: macos-latest
+    needs: run-shell-commands
     steps:
       - name: View SW Version
         run: sw_vers
