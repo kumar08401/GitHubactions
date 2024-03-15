@@ -1,3 +1,0 @@
-[submodule "course-code"]
-	path = course-code
-	url = https://github.com/github-actions-course/course-code.git
