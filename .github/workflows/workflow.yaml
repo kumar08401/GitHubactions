@@ -11,3 +11,12 @@ jobs:
         run: |
           node -v
           npm -v
+  run-shell2-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello World"
+      - name: Multiline Command
+        run: |
+          node -v
+          npm -v
