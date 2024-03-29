@@ -1,0 +1,3 @@
+[submodule "nginx-docker-github-actions"]
+	path = nginx-docker-github-actions
+	url = https://github.com/kumar08401/nginx-docker-github-actions.git
